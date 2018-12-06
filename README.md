@@ -1,6 +1,6 @@
 # php-cookiebox
 
-Quick'n'dirty implementation of cookie compliancy notification (Norwegian), built for use with [Bootstrap](https://getbootstrap.com/) on PHP websites. The files are just copies from [FOKEP.no](fokep.no) so please change code to suit your needs :poop:
+Quick'n'dirty implementation of cookie compliancy notification (Norwegian), built for use with [Bootstrap](https://getbootstrap.com/) on PHP websites. The files are just copies from [FOKEP.no](https://fokep.no) so please change code to suit your needs :poop:
 
 Can be used directly like this:
 ```
