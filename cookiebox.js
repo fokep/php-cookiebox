@@ -2,11 +2,11 @@ function getCookie(w){
     cName = "";
     pCOOKIES = new Array();
     pCOOKIES = document.cookie.split('; ');
-    for(bb = 0; bb < pCOOKIES.length; bb++) {
+    for(i = 0; i < pCOOKIES.length; i++) {
         NmeVal  = new Array();
-        NmeVal  = pCOOKIES[bb].split('=');
+        NmeVal  = pCOOKIES[i].split('=');
         if(NmeVal[0] == w) {
-            cName = unescape(NmeVal[1]);
+            cName = decodeURIComponent(NmeVal[1]);
         }
     }
     return cName;
@@ -16,7 +16,7 @@ function getCookie(w){
 // see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie
 //
 function setCookie(name, value, expires, path, domain) {
-    var cookieVal = name + "=" + escape(value) + "; ";
+    var cookieVal = name + "=" + encodeURIComponent(value) + "; ";
     if (expires) {
         cookieVal += "expires=" + expires.toUTCString() + "; ";
     }
